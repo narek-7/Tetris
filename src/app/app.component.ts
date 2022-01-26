@@ -107,7 +107,6 @@ export class AppComponent implements OnInit {
     if (this.timerId) {
       clearInterval(this.timerId);
     }
-    console.log('SPEED: ' + this.speed);
     this.timerId = setInterval(() => this.makeMove(interval), this.speed);
   }
 
